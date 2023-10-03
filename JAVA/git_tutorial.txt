@@ -1,4 +1,6 @@
 cd (copias ruta con click derecho)
+git branch -m "rama"
+
 git init                  - preparas
 git status                - te tendrian que salir las carpetas y ficheros de dentro
 git add .                 - añades todos los ficheros de dentro
@@ -11,3 +13,6 @@ esta todo en los apuntes del moodle
 git remote add origin (direccion del repositorio)
 git branch -M main
 git push -u origin main
+
+
+clone https://github.com/invasive-dev/DAW-1-ASF.git (carpeta que quieras) revisar e-mail
