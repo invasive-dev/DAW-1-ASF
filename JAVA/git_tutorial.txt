@@ -1,0 +1,13 @@
+cd (copias ruta con click derecho)
+git init                  - preparas
+git status                - te tendrian que salir las carpetas y ficheros de dentro
+git add .                 - añades todos los ficheros de dentro
+git status                - revisas que se añada
+git commit -m "mensaje"   - lo guardas local con el mensaje
+git status                - revisas que se haya subido
+
+esta todo en los apuntes del moodle
+
+git remote add origin (direccion del repositorio)
+git branch -M main
+git push -u origin main
