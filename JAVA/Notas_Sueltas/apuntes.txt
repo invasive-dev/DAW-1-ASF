@@ -1,0 +1,50 @@
+package functions_1;
+
+public class Functions_1 {
+
+    public static void main(String[] args) { // se ejecuta siempre la funcion donde pone main por lo tanto tenemos que llamarla desde aqui
+        System.out.println("Inicia main"); // documentamos cuando inicia el main
+        
+        // holamundo(); // llama a la funcion en el main
+        
+        int num=5; // establecemos el valor de num
+        int calculo = doble(num); // calculo guarda el valor de num luego de pasar por la funcion doble que lo multiplica por 2 por lo que pasa a 10
+        System.out.println("El doble de "+num+" es "+calculo);
+        System.out.println("Acaba main"); // documentamos cuando acaba el main
+    }
+    
+    /* Para crear una funcion pones :
+    1. public static
+    2. el tipo (int,boolean,etc...), en caso de no ser nignuno pones void
+    3. le pones nombre y ()
+    4. pones las claves {}
+    5. dentro pones lo que quieras que haga la funcion*/
+    
+    /* Para hacer debug :
+    1. marcas el numero de la linea dandole click al numero
+    2. vas a debug, debug project
+    3. con F7 entras a la funcion y F8 vas de linea en linea
+    4. en el output puedes ver las salidas */
+    
+    // si pones /**
+    /**  enter se pone esto que es para documentar funciones
+     * funcion multiplica
+     * recibe dos parametros enteros y los multiplica entre ellos
+     * @param valor primer parametro, se pueden poner mas debajo con param
+     * @return resultado de la multiplicacion entera
+     */
+    
+//    public static void holamundo(){
+//     System.out.println("Hello world.");
+//    }
+    
+    //              variable de entrada
+    public static int doble(int valor)
+    {
+     int resultado = valor*2;
+     return resultado; // devuelve este valor guardado al acabar la funcion, seria como el resultado residual de hacer la funcion, lo que nos devuelve cuando la llamamos
+    }
+    
+    // las variables con el mismo nombre no seran las mismas si no estan en la misma funcion
+    // missing return statement significa que tienes que añadir un return dentro
+}

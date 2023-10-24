@@ -1,0 +1,29 @@
+package ej_functions_1;
+
+public class Ej_functions_1 {
+
+    public static void main(String[] args) {
+        System.out.println("Inicia main"); 
+        
+        int num1=10,num2=5;
+        int calculo=multiplica(num1,num2);
+        System.out.println("La multiplicacion entre los dos numeros es de "+calculo);
+        
+        System.out.println("Acaba main"); 
+    }
+    
+    /**
+     * funcion multiplica
+     * recibe dos parametros enteros y los multiplica entre ellos
+     * @param v1 primer parametro
+     * @param v2 segundo parametro
+     * @return resultado de la multiplicacion entera
+     */
+    
+    public static int multiplica(int v1, int v2)
+    {
+     int resultado = v1*v2;
+     return resultado; 
+    }
+    
+}
