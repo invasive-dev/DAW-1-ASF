@@ -1,0 +1,21 @@
+package funciones_ej6;
+/*Escribe un programa que pida cinco precios y muestre por pantalla el precio de venta de cada uno tras aplicarle un 21% de IVA. Implementa y utiliza la función:
+double precioConIVA(double precio) // Devuelve el precio tras sumarle un 21% de IVA*/
+
+// Imports
+import java.util.Scanner;
+
+public class Funciones_ej6 {
+
+    public static void main(String[] args) {
+     
+    }
+    
+    public static float calculaIVA(){
+        
+    }
+    
+    public static float calculaPrecioFinal(){
+     
+    }
+}

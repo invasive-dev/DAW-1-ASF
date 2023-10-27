@@ -1,0 +1,38 @@
+package funciones_ej5;
+/*Escribe un programa que pida un valor entero en millas y muestre su equivalente en kilómetros. Recuerda que una milla son 1,60934 kilómetros. Implementa y utiliza la función:
+double millas_a_kilometros(int millas) // Devuelve la conversión de millas a kilómetros*/
+    
+// Imports
+import java.util.Scanner;
+
+public class Funciones_ej5 {
+
+    public static void main(String[] args) {
+     double millas,km;
+     millas = pedirDatoEnteroPositivo();
+     km = millas_a_kilometros(millas);
+     mostrarConversion(millas,km);
+    }
+    
+    public static double pedirDatoEnteroPositivo(){
+     Scanner sc = new Scanner(System.in);
+     int dato;
+     do
+     {
+      System.out.print("Ingresa el valor en millas: ");
+      dato = sc.nextInt(); sc.nextLine();
+     }while(dato<=0);
+     return dato;
+    }
+    
+    public static double millas_a_kilometros(double millas){
+     final double CONVERSORMILLAS = 1.60934;
+     double calculo = millas * CONVERSORMILLAS;
+     
+     return calculo;
+    }
+    
+    public static void mostrarConversion(double a, double b){
+        System.out.println("Num original: "+a+" | Num convertido: "+b);
+    }
+}

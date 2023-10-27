@@ -1,0 +1,51 @@
+package ejercicio_funciones2;
+
+/* Escribe un programa que pida dos números enteros por teclado y muestre por pantalla cual es el mínimo. 
+   Implementa y utiliza la función: int minimo(int a, int b) // Devuelve el menor entre a y b. */
+
+// Imports
+import java.util.Scanner;
+
+public class Ejercicio_funciones2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // Variables
+        int num1,num2,menor;
+        num1 = pedirDatoEnteroPositivo();
+        num2 = pedirDatoEnteroPositivo();
+        menor=minimo(num1,num2);      
+        System.out.println("El numero menor es: "+menor);
+        
+    }
+    
+    /**
+     * function minimo
+     * revisa cual de los dos valores ("a" y "b") es menor
+     * @param a primer parametro
+     * @param b segundo parametro
+     * @return el valor minimo ya sea a/b
+     */
+    
+    public static int minimo(int a, int b){
+     if(a>b){
+      return b;
+     }
+     else{
+      return a;
+     }
+    }
+    
+    public static int pedirDatoEnteroPositivo(){
+     Scanner sc = new Scanner(System.in);
+     int dato;
+     do
+     {
+      System.out.print("Ingresa el valor: ");
+      dato = sc.nextInt(); sc.nextLine();
+     }while(dato<=0);
+     return dato;
+    }
+}
