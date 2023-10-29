@@ -19,6 +19,6 @@ CLONAR REPOSITORIOS
 cd (copia ubicacion del repositorio donde quieras guardarlo)
 git clone (URL del repositorio)
 
-SI NO TE DEJA SUBIR AL REPOSITORIO
+SI NO TE DEJA SUBIR AL REPOSITORIO USA ESTO
 git pull origin main
 git push origin main
