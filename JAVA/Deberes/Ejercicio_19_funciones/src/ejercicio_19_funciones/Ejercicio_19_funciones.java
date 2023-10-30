@@ -15,7 +15,7 @@ public class Ejercicio_19_funciones{
     }
     
     public static void comprobacionPitagoras(int x, int y, int z){
-     if(x+y==z){ 
+     if(x*x+y*y==z*z){ 
       System.out.println("Es triangulo pitagoras.");
      }
      else{
