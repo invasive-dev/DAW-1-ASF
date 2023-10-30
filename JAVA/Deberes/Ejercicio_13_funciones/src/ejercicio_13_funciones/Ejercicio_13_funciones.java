@@ -9,20 +9,16 @@ public class Ejercicio_13_funciones{
      Scanner sc = new Scanner(System.in);
      
      System.out.print("Ingresa el precio sin descuento: ");
-     double precio_sin_desc = pideSinDescuento(sc);
+     double precio_sin_desc = pideValoresDescuento(sc);
      System.out.print("Ingresa el precio con descuento: ");
-     double precio_con_desc = pideConDescuento(sc);
+     double precio_con_desc = pideValoresDescuento(sc);
      
      double porcentaje_acorde = calcularDescuento(precio_sin_desc,precio_con_desc);
      System.out.println("El porcentaje de descuento aplicado sera del "+porcentaje_acorde+"%");
     }
-    public static double pideSinDescuento(Scanner sc){
+    public static double pideValoresDescuento(Scanner sc){
      double sinDescuento = sc.nextDouble();
      return sinDescuento;
-    }
-    public static double pideConDescuento(Scanner sc){
-     double conDescuento = sc.nextDouble();
-     return conDescuento;
     }
     public static double calcularDescuento(double sin,double con){
      double porcentaje = ((sin - con) / sin) * 100;
