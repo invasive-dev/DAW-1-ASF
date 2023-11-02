@@ -1,0 +1,35 @@
+package ej8_funciones;
+import java.util.Scanner;
+
+public class Ej8_funciones{
+    public static void main(String[] args) {
+     Scanner scanner = new Scanner(System.in);
+
+     System.out.print("Introduce un valor entero: ");
+     int n = scanner.nextInt();
+     int suma = suma1aN(n);
+     int producto = producto1aN(n);
+     int intermedio = intermedio1aN(n);
+
+     System.out.println("Suma de 1 a " + n + " es: " + suma);
+     System.out.println("Producto de 1 a " + n + " es: " + producto);
+     System.out.println("Valor intermedio de 1 a " + n + " es: " + intermedio);
+    }  
+    public static int suma1aN(int n){
+     int suma = 0;
+     for (int i = 1; i <= n; i++){
+      suma = suma+i;
+     }
+     return suma;
+    }
+    public static int producto1aN(int n){
+     int producto = 1;
+     for (int i = 1; i <= n; i++){
+      producto = producto*i;
+     }
+     return producto;
+    }
+    public static int intermedio1aN(int n){
+     return (1+n)/2;
+    } 
+}

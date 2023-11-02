@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+ <meta charset="UTF-8">
+ <meta name="description" content="Portfolio de Adrian Springell Fons">
+ <meta name="keywords" content="Adrian, Portfolio, HTML">
+ <meta name="author" content="Adrian Springell Fons">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <title>Portfolio Adrian Springell Fons</title>
+ <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+ <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+</head>
+
+<body>
+
+ <nav class="navbar">
+  <ul>
+   <li><a href=""><img class="menuicon" src="https://cdn-icons-png.flaticon.com/512/37/37988.png"></a></li>
+   <li class="logo"><a href="https://www.proven.cat/intraweb/index.php"><img class="logo" src="Resources/logo.png"></a></li>
+   
+   <li class="dropdown">
+    <a class="bold nodecoration" href="#contacto">Inicio</a>
+   <div class="dropdown-content">
+    <a href="#">Contacta</a>
+    <a href="#">Ins. Provençana</a>
+   </div>
+   </li>
+   
+   <li class="dropdown">
+    <a class="bold nodecoration">Trabajos</a>
+   <div class="dropdown-content">
+    <a href="#">Recientes y Destacados</a>
+    <a href="#">Experiencia laboral</a>
+   </div>
+   </li>
+   
+   <li class="dropdown">
+    <a class="bold nodecoration">Certificados</a>
+   <div class="dropdown-content">
+    <a href="#">Certificado C#</a>
+    <a href="#">Certificado Seguridad</a>
+    <a href="#">Certificado EF SET</a>
+   </div>
+   </li>
+   
+   <li class="dropdown">
+    <a class="bold nodecoration" href="#contacto">Contacto</a>
+   <div class="dropdown-content">
+    <a href="#">Datos de contacto</a>
+    <a href="#">Formulario de contacto</a>
+   </div>
+   </li>   
+   
+  </ul>
+ </nav>
+ 
+ <p class="title1 center bold">Web & Back-end Developer</p> <p class="title2 center bold">Adrian Springell Fons</p> 
+ 
+ <section>
+  
+  <article> <a class="nodecoration" href="https://www.linkedin.com/in/adrian-springell-fons/"><p class="center button bold"> CONTACTO </p></a> </article>
+ </section>
+ 
+ <footer> 
+ 
+ <hr class="center">
+ 
+ <div class="center">
+  <a href="https://www.linkedin.com/in/adrian-springell-fons/"><img src="https://seeklogo.com/images/L/linkedin-black-icon-logo-ECC426C572-seeklogo.com.png" width="35" height="35"></a>
+  <a href="https://github.com/invasive-dev"><img class="margin1" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="35" height="35"></a>
+  <a href="https://stackoverflow.com/users/21844052/adrian-sf"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111690.png" width="35" height="35"></a>
+ </div>
+ 
+ <div class="center"> 
+  <p class="email">adrianspringellfons@gmail.com</p> <p class="copyright">Copyright ©2023 All rights reserved</p> 
+ </div> 
+ 
+ <div class="lowfooter">
+  <div class="left-phrase"><p class="bold">ADRIAN SPRINGELL FONS</p></div>
+  <div class="right-phrase"><p id="date" class="bold"></p></div>
+  
+  <script>
+   var today = new Date();
+   var yyyy = today.getFullYear();
+   var mm = today.getMonth() + 1;
+   var dd = today.getDate();
+
+   if (mm < 10){
+    mm = '0' + mm;
+   }
+
+   if (dd < 10){
+    dd = '0' + dd;
+   }
+
+   var formattedDate = yyyy + '-' + mm + '-' + dd;
+
+   document.getElementById('date').textContent = formattedDate;
+  </script>
+ </div>
+ 
+ </footer>
+ 
+</body>
+</html>
