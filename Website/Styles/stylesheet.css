@@ -1,5 +1,6 @@
   body{
    font-family: 'Montserrat', sans-serif;
+   margin-top: 60px;
   }
   nav{
    clear: both;
@@ -25,6 +26,7 @@
    text-decoration: none;
    font-size: 20px;
    margin-right: 15px;
+   background-color:white;
   }
   li a:hover {
    color:#4F58A9;
@@ -54,7 +56,7 @@
    text-align: right;
   }
   .bold{
-   font-weight: bold;
+   font-weight: 800;
   }
   .margin1{
    margin-left:40px;
@@ -68,6 +70,18 @@
    line-height: 60px;
    border-radius: 7px;
    font-size: 23px;
+  }
+  .button2{
+   text-align: center;
+   color:white;
+   background-color:#333A72;
+   width:300px;
+   height:60px;
+   line-height: 60px;
+   border-radius: 7px;
+   font-size: 23px;
+   left: 57%;
+   position: relative;
   }
   .title1{
    font-size: 32px;
@@ -85,7 +99,8 @@
   .menuicon{
    width:25px;
    height:20px;
-   margin-top: 1px;
+   position: relative;
+
   }
   .logo{
    width:190px;
@@ -95,22 +110,378 @@
   .marg1{
    margin-bottom:85px;
   }
-  
-  .dropdown {
+  .dropdown{
    float: right;
   }
-  .dropdown-content {
+  .dropdown-content{
    display: none;
    position: absolute;
    z-index: 1;
   }
-  .dropdown:hover .dropdown-content {
+  .dropdown-content2{
+   display: none;
+   position: absolute;
+   z-index: 1;
+   right: 0;
+   top: 100%;
+  }
+  .dropdown:hover .dropdown-content{
    display: block;
   }
-  .dropdown-content a {
+  .dropdown:hover .dropdown-content2{
+   display: block;
+  }
+  .dropdown-content a{
    color: black;
    padding: 1px 22px 10px;
    text-decoration: none;
    display: block;
    text-align: left;
+  }
+  .dropdown-content2 a{
+   color: black;
+   padding: 1px 22px 10px;
+   text-decoration: none;
+   display: block;
+   text-align: right;
+  }
+  .trabajos-recientes{
+   width: 100%; 
+   height: 400px; 
+   background-color: #142850;
+  }
+  .texto-trabajos{
+   line-height: 60px; 
+   color:white;
+   margin:7%;
+   padding:1%;
+   font-size: 20px;
+   left: 150px;
+   position: relative;
+  }
+  .articulo-trabajos{
+   background: white; 
+   border-radius: 11px;
+   width: 400px;
+   height: 285px;
+   margin: 8px;
+   top: -330px;
+   left: 25%;
+   position: relative;
+   display: inline-block;
+   vertical-align: top;
+  }
+  .texto-trabajos{
+   color: #21243D; 
+   font-size: 26px; 
+   font-weight: 700;
+   left: -7%;
+   position: relative;
+   width: 380px;
+  }
+  .texto-trabajos2{
+   color: white; 
+   font-size: 21px; 
+   font-weight: 700;
+   left: 26%;
+   top: 30px;
+   position: relative;
+  }
+  .texto-trabajos3{
+   color: black; 
+   font-weight: 900;
+   font-size: 21px; 
+  }
+  .detalles-trabajos{
+   display: inline-block;
+   font-size: 18px;
+   position: relative;
+   top: -50px;
+   left: -8px;
+  }
+  .desc-trabajos{
+   font-size: 15px;
+   position: relative;
+   top: -50px;
+   left: 40px;
+   text-align: left;
+   width:350px;
+  }
+  .imagen-destacada{
+   width: 190px; 
+   height: 80px; 
+   border-radius: 6px;
+   display: block;
+  }
+  .etiqueta_año{
+   text-align: center;
+   color:white;
+   font-weight: 900;
+   width: 62px; 
+   height: 25px; 
+   background: #142850; 
+   border-radius: 16px;
+   line-height: 26px;
+   position: relative;
+   left: -5%;
+  }
+  .titulo_destacado{
+   font-size: 30px;
+   position: relative;
+   top: 20px;
+   left: -5%;
+  }
+  .desc_destacado{
+   text-align: left;
+   width: 594px;
+   height: 93px;
+   font-size: 20px;
+   position: relative;
+   top: -10px;
+   left: -4%;
+  }
+  .articulo-trabajos-destacados{
+   background: white; 
+   width: 400px;
+   margin: 8px;
+   top: -290px;
+   left: 25%;
+   position: relative;
+   display: inline-block;
+   vertical-align: top;
+  }
+  .articulo-trabajos-destacados2{
+   width: 400px;
+   margin: 8px;
+   top: -325px;
+   left: 18%;
+   position: relative;
+   display: inline-block;
+  }
+  .hr2{
+   top: -625px;
+   position: relative;
+   margin: 0 auto 0 auto;
+  }
+  .hr3{
+   top: -100px;
+   position: relative;
+   margin: 0 auto 0 auto;
+  }
+  .hr4{
+   top: -300px;
+   position: relative;
+   margin: 0 auto 0 auto;
+  }
+  .hr5{
+   top: -110px;
+   left: -195px;
+   position: relative;
+   margin: 0 auto 0 auto;
+   width:55%;
+  }
+  .hr6{
+   top: 1px;
+   position: relative;
+   margin: 0 auto 0 auto;
+  }
+  .experiencia_title{
+   font-size: 40px;
+   position: relative;
+   left: 25%;
+   top: -240px;
+   font-weight: 900;
+  }
+  .experiencia_desc{
+   font-size: 24px;
+   line-height: normal;
+   display:inline-block;
+   position: relative;
+   left: -5%;
+   top: -240px;
+   width: 684px;
+   height: 32px;
+  }
+  .contacto-desc{
+   font-size: 24px;
+   line-height: normal;
+   display:inline-block;
+   position: relative;
+   left: 13%;
+   top: -109px;
+   width: 684px;
+   height: 32px;
+  }
+  .contacto-img{
+   position: relative;
+   left: 12%;
+   top: -100px;
+  }
+  .contacto-tabla{
+   position: relative;
+   left: 12%;
+   top: -75px;
+   width: 80%;
+  }
+  .formulario-desc{
+   font-size: 24px;
+   line-height: normal;
+   display:inline-block;
+   position: relative;
+   left: 4%;
+   top: 3px;
+   text-align:left;
+   width: 684px;
+   height: 32px;
+   float:left;
+  }
+  .formulario-img{
+   position: relative;
+   top:25px;
+   left:20px;
+   float:left;
+   height:35px;
+   width:35px;
+  }
+  .experiencia_img{
+   position: relative;
+   left: -5%;
+   top: -240px;
+  }
+  .titulo-certificados{
+   font-size: 48px;
+   position: relative;
+   top: -240px;
+   margin-bottom:-175px;
+   font-weight: 900;
+  }
+  .titulo-contacto{
+   font-size: 40px;
+   position: relative;
+   top: -88px;
+   left: 12%;
+   font-weight: 900;
+  }
+  .footer-espacio{
+   margin-bottom: 400px;
+  }
+  .footer-espacio2{
+   margin-bottom: 200px;
+  }
+  .margen{
+   margin-top: 200px;
+  }
+  .margen2{
+   margin-top: 100px;
+  }
+  .margen3{
+   margin-bottom: 100px;
+  }
+  #date {
+  position: fixed;
+  bottom: 10px;
+  right: 1%;
+  background-color: white;
+  padding: 8px;
+  border-radius: 7px;
+  z-index: 5;
+ }
+ #nombre {
+  position: fixed;
+  bottom: 10px;
+  right: 87%;
+  background-color: white;
+  padding: 8px;
+  border-radius: 7px; 
+  z-index: 5;
+ }
+ #barra_navegacion {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 5;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+ }
+ table {
+  border-collapse: collapse;
+  width: 50%;
+ }
+ td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 10px;
+ }
+ .tabla-input1{
+  position: relative;
+  top: 28px;
+  left: -31%;
+  width: 500px;
+  padding: 5px;
+ }
+ .tabla-input2{
+  position: relative;
+  top: 28px;
+  left: -23%;
+  width: 500px;
+  padding: 5px;
+ }
+ .tabla-input3{
+  position: relative;
+  top: 28px;
+  left: -17%;
+  width: 400px;
+  padding: 5px;
+ }
+ .menuicon2{
+   width:25px;
+   height:20px;
+   margin-top: 1px;
+   position: relative;
+   left: -16%;
+   top: 33px;
+  }
+ .button{
+   color:white;
+   background-color:#333A72;
+   width:245px;
+   height:60px;
+   line-height: 60px;
+   border-radius: 7px;
+   font-size: 23px;
+  }
+ input[type="reset"] {
+  color:white;
+   background-color:#333A72;
+   width:123px;
+   height:30px;
+   border-radius: 7px;
+   font-size: 16px;
+   position: relative;
+   top: 110px;
+   left: -79%;
+   cursor: pointer;
+ }
+
+ input[type="submit"] {
+   color:white;
+   background-color:#333A72;
+   width:123px;
+   height:30px;
+   border-radius: 7px;
+   font-size: 16px;
+   position: relative;
+   top: 28px;
+   left: -10%;
+   cursor: pointer;
+ }
+ 
+  .checkbox1{
+   position: relative;
+   top: 29px;
+   left: 1%;
+  }
+  .checkbox2{
+   position: relative;
+   top: 85px;
+   left: -63%;
   }
