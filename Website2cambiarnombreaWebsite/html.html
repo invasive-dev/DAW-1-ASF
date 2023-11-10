@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+ <meta charset="UTF-8">
+ <meta name="description" content="Portfolio de Adrian Springell Fons">
+ <meta name="keywords" content="Adrian, Portfolio, HTML">
+ <meta name="author" content="Adrian Springell Fons">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <title>Portfolio Adrian Springell Fons</title>
+ <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+ <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+</head>
+
+<body>
+ <nav id="barra_navegacion" class="bg-white">
+  <ul>
+   
+   <li class="desplegable">
+   <a class="bold nodecoration" href="#inicio">
+    <img class="menuicon relative" alt="desplegable" src="https://cdn-icons-png.flaticon.com/512/37/37988.png">
+   </a>
+   <div class="desplegable-contenido2 right">
+    <a href="">Inicio</a>
+    <a href="#trabajos">Trabajos</a>
+	<a href="#certificados">Certificados</a>
+	<a href="#contacto">Contacto</a>
+   </div>
+   </li>
+   
+   <li class="logo float-left"><a href="https://www.proven.cat/intraweb/index.php"><img alt="Springell" class="logo" src="Resources/logo.png"></a></li>
+   
+   <li class="desplegable">
+    <a class="bold nodecoration" href="">Inicio</a>
+   <div class="desplegable-contenido">
+    <a href="">Contacta</a>
+    <a href="https://www.proven.cat/intraweb/index.php">Ins. Provençana</a>
+   </div>
+   </li>
+   
+   <li class="desplegable">
+    <a class="bold nodecoration" href="#trabajos">Trabajos</a>
+   <div class="desplegable-contenido">
+    <a href="#trabajos">Recientes y Destacados</a>
+    <a href="#trabajos">Experiencia laboral</a>
+   </div>
+   </li>
+   
+   <li class="desplegable">
+    <a class="bold nodecoration" href="#certificados">Certificados</a>
+   <div class="desplegable-contenido">
+    <a href="#certificados">Certificado C#</a>
+    <a href="#certificados">Certificado Seguridad</a>
+    <a href="#certificados">Certificado EF SET</a>
+   </div>
+   </li>
+   
+   <li class="desplegable">
+    <a class="bold nodecoration" href="#contacto">Contacto</a>
+   <div class="desplegable-contenido">
+    <a href="#contacto">Datos de contacto</a>
+    <a href="#formulario">Formulario de contacto</a>
+   </div>
+   </li>   
+   
+  </ul>
+ </nav>
+ 
+ <p class="titulo1 center bold">Web & Back-end Developer</p> <p class="titulo2 center bold">Adrian Springell Fons</p> 
+ 
+ <section id="inicio">
+  <article> <a class="nodecoration" href="https://www.linkedin.com/in/adrian-springell-fons/"><p class="center boton1 bold white"> CONTACTO </p></a> </article>
+ </section>
+ 
+ <footer> 
+ 
+ <hr class="center">
+ 
+ <div class="center">
+  <a href="https://www.linkedin.com/in/adrian-springell-fons/"><img alt="linkedin" src="https://seeklogo.com/images/L/linkedin-black-icon-logo-ECC426C572-seeklogo.com.png" width="35" height="35"></a>
+  <a href="https://github.com/invasive-dev"><img alt="github" class="margen4" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="35" height="35"></a>
+  <a href="https://stackoverflow.com/users/21844052/adrian-sf"><img alt="stackoverflow" src="https://cdn-icons-png.flaticon.com/512/2111/2111690.png" width="35" height="35"></a>
+ </div>
+ 
+ <div class="center"> 
+  <p class="email"><a href="mailto:adrianspringellfons@gmail.com">adrianspringellfons@gmail.com</a></p> <p class="copyright">Copyright ©2023 All rights reserved</p> 
+ </div> 
+ 
+ <div class="lowfooter">
+  <div class="left-phrase"><p id="nombre" class="bold bg-white">ADRIAN SPRINGELL FONS</p></div>
+  <div class="right-phrase"><p id="date" class="bold bg-white"></p></div>
+  
+  <script>
+   var today = new Date();
+   var yyyy = today.getFullYear();
+   var mm = today.getMonth() + 1;
+   var dd = today.getDate();
+
+   if (mm < 10){
+    mm = '0' + mm;
+   }
+
+   if (dd < 10){
+    dd = '0' + dd;
+   }
+
+   var formattedDate = yyyy + '-' + mm + '-' + dd;
+
+   document.getElementById('date').textContent = formattedDate;
+  </script>
+ </div>
+ 
+ </footer>
+ 
+  <hr id="trabajos" class="center hr6 margen3 relative">
+
+ <section>
+  <article>
+ <div class="trabajos-recientes">
+  <h2 class="texto-trabajos2 white relative">
+  Trabajos Recientes
+  </h2>
+ </div>
+ 
+ <div class="center articulo-trabajos bg-white relative">
+  <p class="texto-trabajos bg-white relative">Diseño de algoritmos</p>
+  <p class="detalles-trabajos relative">1 Oct 2023</p>
+  <p class="detalles-trabajos relative">|</p>
+  <p class="detalles-trabajos relative">Diseño, Programación</p>
+  <p class="desc-trabajos left relative">Este mes he diseñado múltiples algoritmos con tal de poder convertirlos en programas funcionales y útiles en el mundo real, utilizando herramientas de software especializadas para ello.</p>
+  </div>
+  <div class="center articulo-trabajos bg-white relative">
+  <p class="texto-trabajos bg-white relative">Calculadora de impuestos</p>
+  <p class="detalles-trabajos relative">10 Oct 2023</p>
+  <p class="detalles-trabajos relative">|</p>
+  <p class="detalles-trabajos relative">Programación, Análisis</p>
+  <p class="desc-trabajos left relative">Aparte de otras calculadoras y convertidores de valores, recientemente he codificado una calculadora que es capaz de saber la cantidad de impuestos sobre tu sueldo para sacar el salario bruto de un trabajador.</p>
+  </div>
+  </article>
+  
+  <article>
+  
+  <div class="articulo-trabajos-destacados bg-white relative">
+  <h3 class="texto-trabajos3 bolder"> Trabajo Destacado</h3>
+  <img class="imagen-destacada" alt="imagen pagina web" src="Resources/webimg.png">
+  </div>
+  
+  <div class="articulo-trabajos-destacados2 relative">
+  <p class="titulo-destacado relative">Esta página web</p>
+  <p class="etiqueta-año white relative bolder">2023</p>
+  <p class="desc-destacado left relative">La página web que estoy utilizando para mostrarte todo esto fue creada por mi utilizando Figma y HTML/CSS.</p>
+
+  </div>
+  </article>
+  
+  <article>
+  <p class="experiencia-title bolder relative">EXPERIENCIA</p>
+  <div class="center">
+  <img class="experiencia-img relative" alt="imagen codigo" src="Resources/code.png">
+  <p class="experiencia-desc relative">Estuve trabajando durante medio año en una empresa de Software en Barcelona.</p>
+  </div>
+  <div class="center">
+  <img class="experiencia-img relative" alt="imagen bdd" src="Resources/database.png">
+  <p class="experiencia-desc relative">Tengo amplia experienca usando y gestionando bases de datos tratando con informacion de clientes de manera rapida y eficaz.</p>
+  </div>
+
+  </article>
+ </section>
+ 
+ <hr class="center hr2 relative">
+ 
+ <footer class="footer-espacio"> 
+ 
+ <hr class="center hr3 relative">
+ 
+ <div class="center">
+  <a href="https://www.linkedin.com/in/adrian-springell-fons/"><img alt="linkedin" src="https://seeklogo.com/images/L/linkedin-black-icon-logo-ECC426C572-seeklogo.com.png" width="35" height="35"></a>
+  <a href="https://github.com/invasive-dev"><img class="margen4" alt="github" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="35" height="35"></a>
+  <a href="https://stackoverflow.com/users/21844052/adrian-sf"><img alt="stackoverflow" src="https://cdn-icons-png.flaticon.com/512/2111/2111690.png" width="35" height="35"></a>
+ </div>
+ 
+ <div class="center"> 
+  <p class="email"><a href="mailto:adrianspringellfons@gmail.com">adrianspringellfons@gmail.com</a></p> <p class="copyright">Copyright ©2023 All rights reserved</p> 
+ </div> 
+ 
+ </footer>
+ 
+ <hr id="certificados" class="center hr4 relative">
+
+ <h2 class="titulo-certificados center bolder relative">CERTIFICADOS</h2>
+ 
+ <table class="center">
+  <tr>
+   <th>Certificado:</th>
+   <td>C# Pathway Certificate</td>
+   <td>Seguridad Informática para Empresas</td>
+   <td>EF SET Certificate™</td>
+  </tr>
+  <tr>
+   <th>Acredita:</th>
+   <td>Entendimiento en el lenguaje de programación C# y la capacidad de trabajar en tiempo real con tecnología de Unity Engine.</td>
+   <td>Entendimiento en la seguridad informática y de como aplicar su uso en ambientes y entornos laborales.</td>
+   <td>Nivel C2 en comprensión y escritura del inglés.</td>
+  </tr>
+  <tr>
+   <th>Org. Exp.:</th>
+   <td>Unity Tecnologies</td>
+   <td>Nordic Solutions</td>
+   <td>EF SET ™</td>
+  </tr>
+  <tr>
+   <th>Data Exp.:</th>
+   <td>15 Enero 2023</td>
+   <td>23 Feb 2023</td>
+   <td>1 Enero 2023</td>
+  </tr>
+ </table>
+
+ <footer class="footer-espacio2"> 
+ 
+ <hr class="center hr3 margen relative">
+ 
+ <div class="center">
+  <a href="https://www.linkedin.com/in/adrian-springell-fons/"><img alt="linkedin" src="https://seeklogo.com/images/L/linkedin-black-icon-logo-ECC426C572-seeklogo.com.png" width="35" height="35"></a>
+  <a href="https://github.com/invasive-dev"><img class="margen4" alt="github" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="35" height="35"></a>
+  <a href="https://stackoverflow.com/users/21844052/adrian-sf"><img alt="stackoverflow" src="https://cdn-icons-png.flaticon.com/512/2111/2111690.png" width="35" height="35"></a>
+ </div>
+ 
+ <div class="center"> 
+  <p class="email"><a href="mailto:adrianspringellfons@gmail.com">adrianspringellfons@gmail.com</a></p> <p class="copyright">Copyright ©2023 All rights reserved</p> 
+ </div> 
+ 
+ </footer>
+ 
+ <hr id="contacto" class="center hr3 margen relative">
+ 
+ <a class="nodecoration" href="https://www.linkedin.com/in/adrian-springell-fons/"><p class="boton2 bold white relative">PONTE EN CONTACTO</p></a>
+ <p class="titulo-contacto bolder relative">CONTACTO</p>
+ 
+ <div>
+  <img class="contacto-img relative" alt="imagen codigo" src="Resources/user.png">
+  <p class="contacto-desc relative">Adrian Springell Fons</p>
+ </div>
+ <hr class="center hr5 relative">
+ <div>
+  <img class="contacto-img relative" alt="imagen codigo" src="Resources/email.png">
+  <p class="contacto-desc relative"><a href="mailto:adrianspringellfons@gmail.com">adrianspringellfons@gmail.com</a></p>
+ </div>
+ <hr class="center hr5 relative">
+ <div>
+  <a><img class="contacto-img relative" alt="github" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="35" height="35"></a>
+  <p class="contacto-desc relative"><a href="https://github.com/invasive-dev">https://github.com/invasive-dev</a></p>
+ </div>
+ <hr class="center hr5 relative">
+ <div>
+  <a><img class="contacto-img relative" alt="linkedin" src="https://seeklogo.com/images/L/linkedin-black-icon-logo-ECC426C572-seeklogo.com.png" width="35" height="35"></a>
+  <p class="contacto-desc relative"><a href="https://www.linkedin.com/in/adrian-springell-fons/">https://www.linkedin.com/in/adrian-springell-fons/</a></p>
+ </div>
+ 
+  <footer class="footer-espacio2"> 
+ 
+ <hr class="center hr3 margen2 relative">
+ 
+ <div class="center">
+  <a href="https://www.linkedin.com/in/adrian-springell-fons/"><img alt="linkedin" src="https://seeklogo.com/images/L/linkedin-black-icon-logo-ECC426C572-seeklogo.com.png" width="35" height="35"></a>
+  <a href="https://github.com/invasive-dev"><img class="margen4" alt="github" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="35" height="35"></a>
+  <a href="https://stackoverflow.com/users/21844052/adrian-sf"><img alt="stackoverflow" src="https://cdn-icons-png.flaticon.com/512/2111/2111690.png" width="35" height="35"></a>
+ </div>
+ 
+ <div class="center"> 
+  <p class="email"><a href="mailto:adrianspringellfons@gmail.com">adrianspringellfons@gmail.com</a></p> <p class="copyright">Copyright ©2023 All rights reserved</p> 
+ </div> 
+ 
+ </footer>
+ 
+ <hr id="formulario" class="center hr3 margen relative">
+ 
+ <p class="titulo-contacto bolder relative">FORMULARIO</p>
+ 
+ <br>
+ <br>
+ <table class="contacto-tabla relative">
+   <tr>
+    <td>
+   <form action="/action_page.php" method="get">
+     <a><img class="formulario-img float-left relative" alt="imagen codigo" src="Resources/user.png"></a>
+     <p class="formulario-desc left relative">Introduce tu nombre:</p> 
+	 <input class="tabla-input1" type="text" id="name" name="name"></input>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a><img class="formulario-img float-left relative" alt="imagen codigo" src="Resources/email.png"></a>
+     <p class="formulario-desc float-left left relative">Introduce tu correo electronico :</p> <input class="tabla-input2" type="email" id="email" name="email">
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <a><img class="formulario-img float-left relative" alt="github" src="Resources/razon.png" width="35" height="35"></a>
+     <p class="formulario-desc float-left left relative">Por qué razón quieres contactar :</p>
+      <input class="tabla-input3" list="browsers" name="browser" id="browser">
+      <datalist id="browsers">
+       <option value="Oferta de trabajo">
+       <option value="Colaborar">
+       <option value="Otro">
+      </datalist>
+	  <img class="menuicon2 relative" alt="desplegable" src="https://cdn-icons-png.flaticon.com/512/37/37988.png">
+       
+	   <input class="" type="reset" value="RESET"> <input class="checkbox1 relative" type="checkbox" id="checkbox1"/>
+
+       <input class="" type="submit" value="ENVIAR"> <input class="checkbox2 relative" type="checkbox" id="checkbox2"/>
+       
+     </form>
+    </td>
+   </tr>
+  </table>
+  
+  <footer class="footer-espacio2"> 
+ 
+ <hr class="center hr3 margen2 relative">
+ 
+ <div class="center">
+  <a href="https://www.linkedin.com/in/adrian-springell-fons/"><img alt="linkedin" src="https://seeklogo.com/images/L/linkedin-black-icon-logo-ECC426C572-seeklogo.com.png" width="35" height="35"></a>
+  <a href="https://github.com/invasive-dev"><img class="margen4" alt="github" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="35" height="35"></a>
+  <a href="https://stackoverflow.com/users/21844052/adrian-sf"><img alt="stackoverflow" src="https://cdn-icons-png.flaticon.com/512/2111/2111690.png" width="35" height="35"></a>
+ </div>
+ 
+ <div class="center"> 
+  <p class="email"><a href="mailto:adrianspringellfons@gmail.com">adrianspringellfons@gmail.com</a></p> <p class="copyright">Copyright ©2023 All rights reserved</p> 
+ </div> 
+ </footer>
+ 
+</body>
+</html>
